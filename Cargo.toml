@@ -2,5 +2,11 @@
 name = "maxtrix"
 version = "0.1.0"
 edition = "2021"
+rustc-link-search = ["./lib"]
 
 [dependencies]
+cxx = "1.0.129"
+cxx-qt = "0.6.1"
+
+[build-dependencies]
+cxx-qt-build = "0.5"
